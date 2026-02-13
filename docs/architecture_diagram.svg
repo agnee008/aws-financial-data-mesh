@@ -1,0 +1,370 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1800" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="awsOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FF9900;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="awsBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#146EB4;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#146EB4;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="awsGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7AA116;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#7AA116;stop-opacity:0.05" />
+    </linearGradient>
+    <linearGradient id="awsPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#945EB4;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#945EB4;stop-opacity:0.05" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#667eea" />
+    </marker>
+  </defs>
+  
+  <!-- Title Section -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#2d3748">
+    AWS Financial Data Mesh Architecture
+  </text>
+  <text x="700" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#718096">
+    Event-Driven Real-Time Data Pipeline | 50K+ Events/Second | Sub-30s Latency
+  </text>
+  
+  <!-- Layer 1: Data Sources -->
+  <rect x="50" y="100" width="1300" height="120" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 1: DATA SOURCE LAYER
+  </text>
+  
+  <!-- Investment API -->
+  <rect x="100" y="150" width="180" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="190" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Investment APIs</text>
+  <text x="190" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Trade Execution</text>
+  
+  <!-- Credit API -->
+  <rect x="320" y="150" width="180" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="410" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Credit APIs</text>
+  <text x="410" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Risk Assessment</text>
+  
+  <!-- Customer API -->
+  <rect x="540" y="150" width="180" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="630" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Customer APIs</text>
+  <text x="630" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Profile Updates</text>
+  
+  <!-- External Systems -->
+  <rect x="760" y="150" width="180" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="850" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">External Systems</text>
+  <text x="850" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Partner Data</text>
+  
+  <!-- API Gateway -->
+  <rect x="980" y="150" width="180" height="60" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <image x="1000" y="155" width="30" height="30" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Cpath fill='%23FF9900' d='M40 0C17.9 0 0 17.9 0 40s17.9 40 40 40 40-17.9 40-40S62.1 0 40 0zm0 4c19.9 0 36 16.1 36 36s-16.1 36-36 36S4 59.9 4 40 20.1 4 40 4zm0 8c-15.5 0-28 12.5-28 28s12.5 28 28 28 28-12.5 28-28-12.5-28-28-28z'/%3E%3C/svg%3E"/>
+  <text x="1070" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">API Gateway</text>
+  <text x="1070" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">REST/WebSocket</text>
+  
+  <!-- Arrows from sources -->
+  <line x1="190" y1="210" x2="400" y2="280" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="410" y1="210" x2="400" y2="280" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="630" y1="210" x2="600" y2="280" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="850" y1="210" x2="700" y2="280" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1070" y1="210" x2="800" y2="280" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 2: Event Ingestion -->
+  <rect x="50" y="260" width="1300" height="160" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 2: EVENT INGESTION &amp; ROUTING (AWS EventBridge)
+  </text>
+  
+  <!-- EventBridge Custom Bus -->
+  <rect x="250" y="310" width="280" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="3" rx="6"/>
+  <text x="390" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon EventBridge</text>
+  <text x="390" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a5568">Custom Event Bus</text>
+  <text x="390" y="380" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Schema Discovery • Archive &amp; Replay</text>
+  
+  <!-- EventBridge Rules -->
+  <rect x="580" y="310" width="200" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="680" y="340" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">EventBridge Rules</text>
+  <text x="680" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Pattern Matching</text>
+  <text x="680" y="380" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Filter &amp; Route Events</text>
+  
+  <!-- EventBridge Archive -->
+  <rect x="830" y="310" width="200" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="930" y="340" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Event Archive</text>
+  <text x="930" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Replay Capability</text>
+  <text x="930" y="380" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">14-Day Retention</text>
+  
+  <!-- Arrows between EventBridge components -->
+  <line x1="530" y1="355" x2="570" y2="355" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="780" y1="355" x2="820" y2="355" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows to next layer -->
+  <line x1="390" y1="400" x2="300" y2="470" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="680" y1="400" x2="600" y2="470" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 3: Buffering & Transformation -->
+  <rect x="50" y="440" width="1300" height="180" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="470" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 3: BUFFERING &amp; TRANSFORMATION
+  </text>
+  
+  <!-- SQS Queue -->
+  <rect x="100" y="490" width="200" height="110" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="200" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon SQS</text>
+  <text x="200" y="540" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Standard Queue</text>
+  <text x="200" y="560" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Backpressure Buffer</text>
+  <text x="200" y="575" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• DLQ with 3 Retries</text>
+  
+  <!-- EventBridge Pipes -->
+  <rect x="350" y="490" width="200" height="110" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">EventBridge Pipes</text>
+  <text x="450" y="540" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Transform &amp; Enrich</text>
+  <text x="450" y="560" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Filter Events</text>
+  <text x="450" y="575" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Built-in Transformations</text>
+  
+  <!-- Lambda Functions -->
+  <rect x="600" y="490" width="200" height="110" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="700" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS Lambda</text>
+  <text x="700" y="540" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Enrichment Functions</text>
+  <text x="700" y="560" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Python 3.11</text>
+  <text x="700" y="575" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Schema Validation</text>
+  
+  <!-- DynamoDB Reference -->
+  <rect x="850" y="490" width="200" height="110" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="950" y="520" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon DynamoDB</text>
+  <text x="950" y="540" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Reference Data</text>
+  <text x="950" y="560" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Instrument Metadata</text>
+  <text x="950" y="575" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Sub-ms Latency</text>
+  
+  <!-- Arrows between transformation components -->
+  <line x1="300" y1="545" x2="340" y2="545" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="545" x2="590" y2="545" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="545" x2="840" y2="545" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="520" x2="850" y2="520" stroke="#667eea" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Arrows to next layer -->
+  <line x1="450" y1="600" x2="450" y2="670" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 4: Batch Processing -->
+  <rect x="50" y="640" width="1300" height="160" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="670" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 4: BATCH PROCESSING &amp; ETL
+  </text>
+  
+  <!-- AWS Glue ETL -->
+  <rect x="200" y="690" width="250" height="90" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="325" y="720" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS Glue</text>
+  <text x="325" y="740" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Serverless PySpark</text>
+  <text x="325" y="760" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Auto-scaling • DPU-based</text>
+  
+  <!-- Glue Data Catalog -->
+  <rect x="500" y="690" width="250" height="90" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="625" y="720" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Glue Data Catalog</text>
+  <text x="625" y="740" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Schema Registry</text>
+  <text x="625" y="760" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Schema Evolution</text>
+  
+  <!-- Glue DataBrew -->
+  <rect x="800" y="690" width="250" height="90" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="925" y="720" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS DataBrew</text>
+  <text x="925" y="740" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Data Quality</text>
+  <text x="925" y="760" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Visual Profiling</text>
+  
+  <!-- Arrows between Glue components -->
+  <line x1="450" y1="735" x2="490" y2="735" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="735" x2="790" y2="735" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows to storage -->
+  <line x1="325" y1="780" x2="300" y2="870" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="625" y1="780" x2="600" y2="870" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 5: Storage -->
+  <rect x="50" y="820" width="1300" height="180" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="850" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 5: STORAGE LAYER
+  </text>
+  
+  <!-- S3 Data Lake -->
+  <rect x="100" y="870" width="250" height="110" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="225" y="905" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon S3</text>
+  <text x="225" y="925" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Data Lake (Parquet)</text>
+  <text x="225" y="945" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Partitioned by Date</text>
+  <text x="225" y="960" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Lifecycle Policies</text>
+  
+  <!-- DynamoDB Tables -->
+  <rect x="400" y="870" width="250" height="110" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="525" y="905" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon DynamoDB</text>
+  <text x="525" y="925" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Processed Events</text>
+  <text x="525" y="945" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Real-time Queries</text>
+  <text x="525" y="960" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Single-digit ms</text>
+  
+  <!-- S3 Glacier -->
+  <rect x="700" y="870" width="250" height="110" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="825" y="905" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">S3 Glacier</text>
+  <text x="825" y="925" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Cold Archive</text>
+  <text x="825" y="945" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• 90-day Lifecycle</text>
+  <text x="825" y="960" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Compliance Storage</text>
+  
+  <!-- S3 Intelligent Tiering -->
+  <rect x="1000" y="870" width="250" height="110" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="1125" y="905" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">S3 Intelligent-Tiering</text>
+  <text x="1125" y="925" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Auto Cost Optimization</text>
+  <text x="1125" y="945" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Automatic Tiering</text>
+  
+  <!-- Arrows to analytics -->
+  <line x1="225" y1="980" x2="300" y2="1070" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="525" y1="980" x2="600" y2="1070" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 6: Analytics -->
+  <rect x="50" y="1020" width="1300" height="180" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="1050" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 6: ANALYTICS &amp; REPORTING
+  </text>
+  
+  <!-- Amazon Athena -->
+  <rect x="100" y="1070" width="250" height="110" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="225" y="1105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon Athena</text>
+  <text x="225" y="1125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Serverless SQL</text>
+  <text x="225" y="1145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Ad-hoc Queries</text>
+  <text x="225" y="1160" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Pay per Query</text>
+  
+  <!-- Amazon QuickSight -->
+  <rect x="400" y="1070" width="250" height="110" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="525" y="1105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon QuickSight</text>
+  <text x="525" y="1125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Business Intelligence</text>
+  <text x="525" y="1145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Real-time Dashboards</text>
+  <text x="525" y="1160" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• ML Insights</text>
+  
+  <!-- AWS Transfer Family -->
+  <rect x="700" y="1070" width="250" height="110" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="825" y="1105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS Transfer Family</text>
+  <text x="825" y="1125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">SFTP/FTPS</text>
+  <text x="825" y="1145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Encrypted Delivery</text>
+  <text x="825" y="1160" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Automated Reports</text>
+  
+  <!-- Amazon EMR -->
+  <rect x="1000" y="1070" width="250" height="110" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="1125" y="1105" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon EMR</text>
+  <text x="1125" y="1125" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Big Data Processing</text>
+  <text x="1125" y="1145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Spark Clusters</text>
+  <text x="1125" y="1160" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Complex Analytics</text>
+  
+  <!-- Arrows to presentation -->
+  <line x1="525" y1="1180" x2="525" y2="1270" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 7: Presentation -->
+  <rect x="50" y="1220" width="1300" height="160" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="1250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    LAYER 7: PRESENTATION &amp; DELIVERY
+  </text>
+  
+  <!-- ECS Fargate -->
+  <rect x="200" y="1270" width="250" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="325" y="1300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon ECS Fargate</text>
+  <text x="325" y="1320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Containerized UI</text>
+  <text x="325" y="1340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Serverless Containers</text>
+  
+  <!-- Network Load Balancer -->
+  <rect x="500" y="1270" width="250" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="625" y="1300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Network Load Balancer</text>
+  <text x="625" y="1320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">High Availability</text>
+  <text x="625" y="1340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Multi-AZ Distribution</text>
+  
+  <!-- CloudFront CDN -->
+  <rect x="800" y="1270" width="250" height="90" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="925" y="1300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon CloudFront</text>
+  <text x="925" y="1320" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">CDN</text>
+  <text x="925" y="1340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">• Global Edge Locations</text>
+  
+  <!-- Arrows between presentation components -->
+  <line x1="450" y1="1315" x2="490" y2="1315" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="1315" x2="790" y2="1315" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final arrow to end users -->
+  <line x1="625" y1="1360" x2="625" y2="1420" stroke="#667eea" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- End Users -->
+  <rect x="400" y="1420" width="450" height="80" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="625" y="1450" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2d3748">End Users &amp; Downstream Systems</text>
+  <text x="625" y="1475" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#4a5568">Partner Banks • Regulatory Authorities • Internal Teams</text>
+  
+  <!-- Supporting Services Box -->
+  <rect x="50" y="1530" width="420" height="240" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="70" y="1560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    SUPPORTING AWS SERVICES
+  </text>
+  
+  <!-- CloudWatch -->
+  <rect x="70" y="1580" width="180" height="60" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="160" y="1605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">CloudWatch</text>
+  <text x="160" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Monitoring &amp; Logging</text>
+  
+  <!-- CloudTrail -->
+  <rect x="270" y="1580" width="180" height="60" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="360" y="1605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">CloudTrail</text>
+  <text x="360" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Audit Logs</text>
+  
+  <!-- IAM -->
+  <rect x="70" y="1660" width="180" height="60" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="160" y="1685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS IAM</text>
+  <text x="160" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Access Control</text>
+  
+  <!-- KMS -->
+  <rect x="270" y="1660" width="180" height="60" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="360" y="1685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS KMS</text>
+  <text x="360" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Encryption Keys</text>
+  
+  <!-- Infrastructure Box -->
+  <rect x="500" y="1530" width="420" height="240" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="520" y="1560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    INFRASTRUCTURE &amp; DEPLOYMENT
+  </text>
+  
+  <!-- CDK -->
+  <rect x="520" y="1580" width="180" height="60" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="610" y="1605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">AWS CDK</text>
+  <text x="610" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Infrastructure as Code</text>
+  
+  <!-- CodePipeline -->
+  <rect x="720" y="1580" width="180" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="810" y="1605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">CodePipeline</text>
+  <text x="810" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">CI/CD Pipeline</text>
+  
+  <!-- Step Functions -->
+  <rect x="520" y="1660" width="180" height="60" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="610" y="1685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">Step Functions</text>
+  <text x="610" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Workflow Orchestration</text>
+  
+  <!-- VPC -->
+  <rect x="720" y="1660" width="180" height="60" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="810" y="1685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#2d3748">Amazon VPC</text>
+  <text x="810" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Network Isolation</text>
+  
+  <!-- Metrics Box -->
+  <rect x="950" y="1530" width="400" height="240" fill="#fff" stroke="#cbd5e0" stroke-width="2" rx="8"/>
+  <text x="970" y="1560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4a5568">
+    PERFORMANCE METRICS
+  </text>
+  
+  <!-- Metrics -->
+  <rect x="970" y="1580" width="170" height="60" fill="url(#awsOrange)" stroke="#FF9900" stroke-width="2" rx="6"/>
+  <text x="1055" y="1605" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2d3748">50K+</text>
+  <text x="1055" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Events/Second</text>
+  
+  <rect x="1160" y="1580" width="170" height="60" fill="url(#awsBlue)" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="1245" y="1605" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2d3748">&lt;30s</text>
+  <text x="1245" y="1625" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">End-to-End Latency</text>
+  
+  <rect x="970" y="1660" width="170" height="60" fill="url(#awsGreen)" stroke="#7AA116" stroke-width="2" rx="6"/>
+  <text x="1055" y="1685" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2d3748">60%</text>
+  <text x="1055" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Cost Reduction</text>
+  
+  <rect x="1160" y="1660" width="170" height="60" fill="url(#awsPurple)" stroke="#945EB4" stroke-width="2" rx="6"/>
+  <text x="1245" y="1685" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2d3748">99.95%</text>
+  <text x="1245" y="1705" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#718096">Uptime SLA</text>
+  
+  <!-- Footer -->
+  <text x="700" y="1790" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#718096">
+    Production Architecture | Implemented at Barclays | By Agnibes Banerjee | github.com/agnibes/aws-financial-data-mesh
+  </text>
+</svg>

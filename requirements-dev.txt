@@ -1,0 +1,21 @@
+# Include base requirements
+-r requirements.txt
+
+# Development Tools
+ipython>=8.18.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Testing
+pytest-asyncio>=0.21.0
+pytest-xdist>=3.5.0  # Parallel testing
+localstack>=3.0.0  # Local AWS testing
+
+# Code Quality
+autopep8>=2.0.4
+isort>=5.13.0
+pre-commit>=3.6.0
+
+# AWS CDK
+aws-cdk-lib>=2.115.0
+constructs>=10.3.0

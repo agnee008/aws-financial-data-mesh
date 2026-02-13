@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://financial-data-mesh.example.com/schemas/trade-executed.json",
+  "title": "TradeExecuted",
+  "description": "Schema for trade execution events",
+  "type": "object",
+  "required": [
+    "trade_id",
+    "instrument",
+    "quantity",
+    "price",
+    "trader_id",
+    "direction",
+    "timestamp"
+  ],
+  "properties": {
+    "trade_id": {
+      "type": "string",
+      "description": "Unique trade identifier",
+      "pattern": "^TRD[0-9]{10}$",
+      "examples": ["TRD0000001234"]
+    },
+    "instrument": {
+      "type": "string",
+      "description": "Trading instrument code (ticker symbol)",
+      "minLength": 1,
+      "maxLength": 10,
+      "examples": ["AAPL", "GOOGL", "MSFT"]
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Number of shares/units traded",
+      "minimum": 1,
+      "examples": [100, 500, 1000]
+    },
+    "price": {
+      "type": "number",
+      "description": "Execution price per unit",
+      "minimum": 0.01,
+      "examples": [150.25, 2850.50]
+    },
+    "trader_id": {
+      "type": "string",
+      "description": "Trader identifier",
+      "pattern": "^TRD[0-9]{3}$",
+      "examples": ["TRD001", "TRD042"]
+    },
+    "direction": {
+      "type": "string",
+      "description": "Trade direction",
+      "enum": ["BUY", "SELL"]
+    },
+    "exchange": {
+      "type": "string",
+      "description": "Trading venue",
+      "examples": ["NASDAQ", "NYSE", "LSE"]
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "Trade execution timestamp in ISO 8601 format",
+      "format": "date-time",
+      "examples": ["2026-02-13T10:30:00Z"]
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Optional correlation ID for tracking",
+      "format": "uuid"
+    },
+    "instrument_metadata": {
+      "type": "object",
+      "description": "Enriched instrument information",
+      "properties": {
+        "sector": {
+          "type": "string",
+          "examples": ["Technology", "Healthcare"]
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "examples": ["USD", "GBP", "EUR"]
+        },
+        "exchange": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
