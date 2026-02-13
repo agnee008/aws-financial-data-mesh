@@ -262,7 +262,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 Connect with me:
 - LinkedIn: [linkedin.com/in/agnibeshbanerjee](https://linkedin.com/in/agnibeshbanerjee)
-- Medium: [@agnibes](https://medium.com/@agnibes)
+- Medium: [@agnibes](https://medium.com/@agnee008)
 - Email: agnee008@gmail.com
 
 ## 🙏 Acknowledgments
